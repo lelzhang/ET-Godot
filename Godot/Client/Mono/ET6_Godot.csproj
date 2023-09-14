@@ -1,0 +1,23 @@
+<Project Sdk="Godot.NET.Sdk/4.1.1">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Codes\obj\**" />
+    <EmbeddedResource Remove="Codes\obj\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ENet-CSharp" Version="2.4.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CommandLine">
+      <HintPath>..\Plugins\CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

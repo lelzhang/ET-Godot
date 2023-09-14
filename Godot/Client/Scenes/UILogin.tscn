@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://1l4eutnbr0sy"]
+
+[node name="UILogin" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 128.0
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="."]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 0
+offset_left = 664.22
+offset_top = 400.0
+offset_right = 764.22
+offset_bottom = 431.0
+action_mode = 0
+text = "Login
+"
+
+[node name="Account" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 300.0
+offset_right = 790.0
+offset_bottom = 330.0
+context_menu_enabled = false
+shortcut_keys_enabled = false
+
+[node name="Password" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 350.0
+offset_right = 790.0
+offset_bottom = 380.0
+context_menu_enabled = false
+shortcut_keys_enabled = false
