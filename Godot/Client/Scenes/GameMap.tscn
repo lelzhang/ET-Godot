@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6ygv6pr1kdak"]
-
-[ext_resource type="PackedScene" uid="uid://baw6bc8uyicnj" path="res://Scenes/CameraRoot.tscn" id="1_b88sv"]
-
-[node name="GameMap" type="Node3D"]
-
-[node name="CameraRoot" parent="." instance=ExtResource("1_b88sv")]
-
-[editable path="CameraRoot"]

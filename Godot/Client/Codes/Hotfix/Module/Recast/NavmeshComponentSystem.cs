@@ -28,7 +28,7 @@ namespace ET
                 throw new Exception($"no nav data: {name}");
             }
 
-            //ptr = Recast.RecastLoadLong(name.GetHashCode(), buffer, buffer.Length);
+            ptr = Recast.RecastLoadLong(name.GetHashCode(), buffer, buffer.Length);
             self.Navmeshs[name] = ptr;
 
             return ptr;
