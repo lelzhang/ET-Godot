@@ -16,3 +16,7 @@ res://Mono/GodotUtils/World2D/Platformer/CameraController.cs
 res://Mono/GodotUtils/World2D/TopDown/CameraController.cs
 res://Mono/MonoBehaviour/Init.cs
 res://Scenes/Init.tscn
+res://Scenes/UILogin.tscn
+res://Scenes/UILobby.tscn
+res://Scenes/CameraRoot.tscn
+res://Scenes/GameMap.tscn

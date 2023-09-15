@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ET_Godot", "ET_Godot.csproj", "{DE9D88D3-0E6E-40DA-93BC-088F95F30A38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		ExportDebug|Any CPU = ExportDebug|Any CPU
+		ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE9D88D3-0E6E-40DA-93BC-088F95F30A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9D88D3-0E6E-40DA-93BC-088F95F30A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9D88D3-0E6E-40DA-93BC-088F95F30A38}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{DE9D88D3-0E6E-40DA-93BC-088F95F30A38}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{DE9D88D3-0E6E-40DA-93BC-088F95F30A38}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{DE9D88D3-0E6E-40DA-93BC-088F95F30A38}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
