@@ -13,19 +13,22 @@ namespace ET
 
 	public partial class Init: Node
 	{
+		public Node Node { get; set; }
+
 		public static Init Instance;
 
 		public CodeMode CodeMode = CodeMode.Mono;
 
 		public override void _Ready()
 		{
+			this.Node = this;
 
-            Instance = this;
+			Instance = this;
 #if ENABLE_IL2CPP
 			this.CodeMode = CodeMode.ILRuntime;
 #endif
 
-            System.AppDomain.CurrentDomain.UnhandledException += (sender, e) =>
+			System.AppDomain.CurrentDomain.UnhandledException += (sender, e) =>
 			{
 				Log.Error(e.ExceptionObject.ToString());
 			};
@@ -35,24 +38,24 @@ namespace ET
 
 			ETTask.ExceptionHandler += Log.Error;
 
-            Log.ILog = new GodotLogger();
+			Log.ILog = new GodotLogger();
 
-            Game.Start();
+			Game.Start();
 
-            Game.EventSystem.Publish(new ET.EventType.AppStart());
-        }
+			Game.EventSystem.Publish(new ET.EventType.AppStart());
+		}
 
 		public override void _Process(double delta)
 		{
 
-            Game.Update();
-            Game.LateUpdate();
+			Game.Update();
+			Game.LateUpdate();
 		}
 
 
 		private void OnApplicationQuit()
 		{
-            Game.Close();
-        }
+			Game.Close();
+		}
 	}
 }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace UnityEngine
+namespace Godot
 {
     [Serializable]
     public struct Vector2: IEquatable<Vector2>
@@ -14,7 +14,7 @@ namespace UnityEngine
         
         public static implicit operator Vector2(Vector3 v)
         {
-            return new Vector2(v.x, v.y);
+            return new Vector2(v.X, v.Y);
         }
 
         public static implicit operator Vector3(Vector2 v)

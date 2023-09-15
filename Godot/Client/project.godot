@@ -11,10 +11,15 @@ config_version=5
 [application]
 
 config/name="ET6_Godot"
-run/main_scene="res://Scenes/Init.scn"
+run/main_scene="res://Scenes/Init.tscn"
 config/features=PackedStringArray("4.1", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 //config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
 
 [dotnet]
 

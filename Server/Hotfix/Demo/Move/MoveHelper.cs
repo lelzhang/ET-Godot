@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using UnityEngine;
+using Godot;
 
 namespace ET
 {
@@ -32,9 +32,9 @@ namespace ET
             for (int i = 0; i < list.Count; ++i)
             {
                 Vector3 vector3 = list[i];
-                m2CPathfindingResult.Xs.Add(vector3.x);
-                m2CPathfindingResult.Ys.Add(vector3.y);
-                m2CPathfindingResult.Zs.Add(vector3.z);
+                m2CPathfindingResult.Xs.Add(vector3.X);
+                m2CPathfindingResult.Ys.Add(vector3.Y);
+                m2CPathfindingResult.Zs.Add(vector3.Z);
             }
             MessageHelper.Broadcast(unit, m2CPathfindingResult);
 
@@ -57,9 +57,9 @@ namespace ET
             {
                 Error = error,
                 Id = unit.Id, 
-                X = unit.Position.x,
-                Y = unit.Position.y,
-                Z = unit.Position.z,
+                X = unit.Position.X,
+                Y = unit.Position.Y,
+                Z = unit.Position.Z,
 						
                 A = unit.Rotation.x,
                 B = unit.Rotation.y,

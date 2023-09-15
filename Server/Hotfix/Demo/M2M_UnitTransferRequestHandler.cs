@@ -1,5 +1,5 @@
 ﻿using System;
-using UnityEngine;
+using Godot;
 
 namespace ET
 {
@@ -21,7 +21,7 @@ namespace ET
 			}
 			
 			unit.AddComponent<MoveComponent>();
-			unit.AddComponent<PathfindingComponent, string>(scene.Name);
+			//unit.AddComponent<PathfindingComponent, string>(scene.Name);
 			unit.Position = new Vector3(-10, 0, -10);
 			
 			unit.AddComponent<MailBoxComponent>();

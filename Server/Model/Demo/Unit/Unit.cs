@@ -1,6 +1,6 @@
 ﻿using System;
 using MongoDB.Bson.Serialization.Attributes;
-using UnityEngine;
+using Godot;
 
 namespace ET
 {
@@ -21,7 +21,7 @@ namespace ET
             get => this.position;
             set
             {
-                EventType.ChangePosition.Instance.OldPos.Value = this.position;
+                EventType.ChangePosition.Instance.OldPos = this.position;
                 this.position = value;
                 EventType.ChangePosition.Instance.Unit = this;
                 Game.EventSystem.PublishClass(EventType.ChangePosition.Instance);
@@ -31,8 +31,8 @@ namespace ET
         [BsonIgnore]
         public Vector3 Forward
         {
-            get => this.Rotation * Vector3.forward;
-            set => this.Rotation = Quaternion.LookRotation(value, Vector3.up);
+            get => this.Rotation * Vector3.Forward;
+            set => this.Rotation = Quaternion.LookRotation(value, Vector3.Up);
         }
 
         private Quaternion rotation;

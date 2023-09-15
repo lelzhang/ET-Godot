@@ -1,3 +1,4 @@
+using ET.EventType;
 using System;
 
 
@@ -9,6 +10,7 @@ namespace ET
         {
             try
             {
+                Log.Debug($"account:{account}   password:{password}");
                 // 创建一个ETModel层的Session
                 R2C_Login r2CLogin;
                 Session session = null;

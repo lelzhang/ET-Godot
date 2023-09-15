@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using UnityEngine;
+using Godot;
 
 namespace ET
 {
@@ -13,7 +13,7 @@ namespace ET
             public override void Awake(AOIEntity self, int distance, Vector3 pos)
             {
                 self.ViewDistance = distance;
-                self.Domain.GetComponent<AOIManagerComponent>().Add(self, pos.x, pos.z);
+                self.Domain.GetComponent<AOIManagerComponent>().Add(self, pos.X, pos.Z);
             }
         }
 

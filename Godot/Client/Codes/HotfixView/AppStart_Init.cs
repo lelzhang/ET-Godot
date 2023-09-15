@@ -31,7 +31,7 @@ namespace ET
             Game.Scene.AddComponent<SessionStreamDispatcher>();
             Game.Scene.AddComponent<ZoneSceneManagerComponent>();
             
-            //Game.Scene.AddComponent<GlobalComponent>();
+            Game.Scene.AddComponent<GlobalComponent>();
             Game.Scene.AddComponent<NumericWatcherComponent>();
             Game.Scene.AddComponent<AIDispatcherComponent>();
             // await ResourcesComponent.Instance.LoadBundleAsync("unit.unity3d");

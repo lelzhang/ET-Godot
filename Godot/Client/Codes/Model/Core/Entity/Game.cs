@@ -35,8 +35,6 @@ namespace ET
         public static ILog ILog;
 
         public static List<Action> FrameFinishCallback = new List<Action>();
-        static Queue<int> queue;
-        static Queue<int> queue2;
         public static void Start()
         {
             Options.Instance = new Options();

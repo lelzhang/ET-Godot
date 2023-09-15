@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace UnityEngine
+namespace Godot
 {
     [Serializable]
     public struct Vector4: IEquatable<Vector4>
@@ -31,9 +31,9 @@ namespace UnityEngine
 
         public Vector4(Vector3 value, float w)
         {
-            this.x = value.x;
-            this.y = value.y;
-            this.z = value.z;
+            this.x = value.X;
+            this.y = value.Y;
+            this.z = value.Z;
             this.w = w;
         }
 

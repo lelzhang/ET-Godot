@@ -15,20 +15,20 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Content Include="..\..\Unity\Assets\Plugins\MacOS\libRecastDll.dylib">
+      <Content Include="..\..\Godot\Client\Plugins\MacOS\libRecastDll.dylib">
         <Link>libRecastDll.dylib</Link>
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
-      <Content Include="..\..\Unity\Assets\Plugins\x86_64\RecastDll.dll">
+      <Content Include="..\..\Godot\Client\Plugins\x86_64\RecastDll.dll">
           <Link>RecastDll.dll</Link>
           <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
         
-      <Content Include="..\..\Unity\Assets\Plugins\MacOS\libkcp.dylib">
+      <Content Include="..\..\Godot\Client\Plugins\MacOS\libkcp.dylib">
         <Link>libkcp.dylib</Link>
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
-      <Content Include="..\..\Unity\Assets\Plugins\x86_64\kcp.dll">
+      <Content Include="..\..\Godot\Client\Plugins\x86_64\kcp.dll">
         <Link>kcp.dll</Link>
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
@@ -40,12 +40,12 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Include="..\..\Unity\Assets\ThirdParty\ShareLib\Kcp\Kcp.cs">
+      <Compile Include="..\..\Godot\Client\ThirdParty\ShareLib\Kcp\Kcp.cs">
         <Link>Kcp\Kcp.cs</Link>
       </Compile>
-      <Compile Include="..\..\Unity\Assets\ThirdParty\ShareLib\Recast\Recast.cs">
-        <Link>Recast\Recast.cs</Link>
-      </Compile>
+		<Compile Include="..\..\Godot\Client\ThirdParty\ShareLib\Recast\Recast.cs">
+			<Link>Recast\Recast.cs</Link>
+		</Compile>
     </ItemGroup>
 
     <ItemGroup>

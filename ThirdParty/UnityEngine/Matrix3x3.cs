@@ -3,7 +3,7 @@
 // Licensed under the MIT license
 //**************************************************
 
-namespace UnityEngine
+namespace Godot
 {
 	public struct Matrix3x3
 	{
@@ -50,9 +50,9 @@ namespace UnityEngine
 
 		public void SetOrthoNormalBasis(Vector3 inX, Vector3 inY, Vector3 inZ)
 		{
-			this.Set(0, 0, inX.x); this.Set(0, 1, inY.x); this.Set(0, 2, inZ.x);
-			this.Set(1, 0, inX.y); this.Set(1, 1, inY.y); this.Set(1, 2, inZ.y);
-			this.Set(2, 0, inX.z); this.Set(2, 1, inY.z); this.Set(2, 2, inZ.z);
+			this.Set(0, 0, inX.X); this.Set(0, 1, inY.X); this.Set(0, 2, inZ.X);
+			this.Set(1, 0, inX.Y); this.Set(1, 1, inY.Y); this.Set(1, 2, inZ.Y);
+			this.Set(2, 0, inX.Z); this.Set(2, 1, inY.Z); this.Set(2, 2, inZ.Z);
 		}
 		public float GetDeterminant()
 		{

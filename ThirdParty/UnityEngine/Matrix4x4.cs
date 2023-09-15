@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace UnityEngine
+namespace Godot
 {
     [Serializable]
     public struct Matrix4x4: IEquatable<Matrix4x4>
@@ -38,16 +38,16 @@ namespace UnityEngine
             get
             {
                 Vector3 vector3;
-                vector3.x = this.m01;
-                vector3.y = this.m11;
-                vector3.z = this.m21;
+                vector3.X = this.m01;
+                vector3.Y = this.m11;
+                vector3.Z = this.m21;
                 return vector3;
             }
             set
             {
-                this.m01 = value.x;
-                this.m11 = value.y;
-                this.m21 = value.z;
+                this.m01 = value.X;
+                this.m11 = value.Y;
+                this.m21 = value.Z;
             }
         }
 
@@ -56,16 +56,16 @@ namespace UnityEngine
             get
             {
                 Vector3 vector3;
-                vector3.x = -this.m01;
-                vector3.y = -this.m11;
-                vector3.z = -this.m21;
+                vector3.X = -this.m01;
+                vector3.Y = -this.m11;
+                vector3.Z = -this.m21;
                 return vector3;
             }
             set
             {
-                this.m01 = -value.x;
-                this.m11 = -value.y;
-                this.m21 = -value.z;
+                this.m01 = -value.X;
+                this.m11 = -value.Y;
+                this.m21 = -value.Z;
             }
         }
 
@@ -74,16 +74,16 @@ namespace UnityEngine
             get
             {
                 Vector3 vector3;
-                vector3.x = this.m00;
-                vector3.y = this.m10;
-                vector3.z = this.m20;
+                vector3.X = this.m00;
+                vector3.Y = this.m10;
+                vector3.Z = this.m20;
                 return vector3;
             }
             set
             {
-                this.m00 = value.x;
-                this.m10 = value.y;
-                this.m20 = value.z;
+                this.m00 = value.X;
+                this.m10 = value.Y;
+                this.m20 = value.Z;
             }
         }
 
@@ -92,16 +92,16 @@ namespace UnityEngine
             get
             {
                 Vector3 vector3;
-                vector3.x = -this.m00;
-                vector3.y = -this.m10;
-                vector3.z = -this.m20;
+                vector3.X = -this.m00;
+                vector3.Y = -this.m10;
+                vector3.Z = -this.m20;
                 return vector3;
             }
             set
             {
-                this.m00 = -value.x;
-                this.m10 = -value.y;
-                this.m20 = -value.z;
+                this.m00 = -value.X;
+                this.m10 = -value.Y;
+                this.m20 = -value.Z;
             }
         }
 
@@ -110,16 +110,16 @@ namespace UnityEngine
             get
             {
                 Vector3 vector3;
-                vector3.x = -this.m02;
-                vector3.y = -this.m12;
-                vector3.z = -this.m22;
+                vector3.X = -this.m02;
+                vector3.Y = -this.m12;
+                vector3.Z = -this.m22;
                 return vector3;
             }
             set
             {
-                this.m02 = -value.x;
-                this.m12 = -value.y;
-                this.m22 = -value.z;
+                this.m02 = -value.X;
+                this.m12 = -value.Y;
+                this.m22 = -value.Z;
             }
         }
 
@@ -128,16 +128,16 @@ namespace UnityEngine
             get
             {
                 Vector3 vector3;
-                vector3.x = this.m02;
-                vector3.y = this.m12;
-                vector3.z = this.m22;
+                vector3.X = this.m02;
+                vector3.Y = this.m12;
+                vector3.Z = this.m22;
                 return vector3;
             }
             set
             {
-                this.m02 = value.x;
-                this.m12 = value.y;
-                this.m22 = value.z;
+                this.m02 = value.X;
+                this.m12 = value.Y;
+                this.m22 = value.Z;
             }
         }
 
@@ -233,15 +233,15 @@ namespace UnityEngine
             matrix44.m00 = 1f;
             matrix44.m01 = 0.0f;
             matrix44.m02 = 0.0f;
-            matrix44.m03 = position.x;
+            matrix44.m03 = position.X;
             matrix44.m10 = 0.0f;
             matrix44.m11 = 1f;
             matrix44.m12 = 0.0f;
-            matrix44.m13 = position.y;
+            matrix44.m13 = position.Y;
             matrix44.m20 = 0.0f;
             matrix44.m21 = 0.0f;
             matrix44.m22 = 1f;
-            matrix44.m23 = position.z;
+            matrix44.m23 = position.Z;
             matrix44.m30 = 0.0f;
             matrix44.m31 = 0.0f;
             matrix44.m32 = 0.0f;
@@ -262,15 +262,15 @@ namespace UnityEngine
             matrix.m00 = 1f;
             matrix.m01 = 0.0f;
             matrix.m02 = 0.0f;
-            matrix.m03 = position.x;
+            matrix.m03 = position.X;
             matrix.m10 = 0.0f;
             matrix.m11 = 1f;
             matrix.m12 = 0.0f;
-            matrix.m13 = position.y;
+            matrix.m13 = position.Y;
             matrix.m20 = 0.0f;
             matrix.m21 = 0.0f;
             matrix.m22 = 1f;
-            matrix.m23 = position.z;
+            matrix.m23 = position.Z;
             matrix.m30 = 0.0f;
             matrix.m31 = 0.0f;
             matrix.m32 = 0.0f;
@@ -280,17 +280,17 @@ namespace UnityEngine
         public static Matrix4x4 CreateScale(Vector3 scales)
         {
             Matrix4x4 matrix44;
-            matrix44.m00 = scales.x;
+            matrix44.m00 = scales.X;
             matrix44.m01 = 0.0f;
             matrix44.m02 = 0.0f;
             matrix44.m03 = 0.0f;
             matrix44.m10 = 0.0f;
-            matrix44.m11 = scales.y;
+            matrix44.m11 = scales.Y;
             matrix44.m12 = 0.0f;
             matrix44.m13 = 0.0f;
             matrix44.m20 = 0.0f;
             matrix44.m21 = 0.0f;
-            matrix44.m22 = scales.z;
+            matrix44.m22 = scales.Z;
             matrix44.m23 = 0.0f;
             matrix44.m30 = 0.0f;
             matrix44.m31 = 0.0f;
@@ -316,17 +316,17 @@ namespace UnityEngine
 
         public static void CreateScale(ref Vector3 scales, out Matrix4x4 matrix)
         {
-            matrix.m00 = scales.x;
+            matrix.m00 = scales.X;
             matrix.m01 = 0.0f;
             matrix.m02 = 0.0f;
             matrix.m03 = 0.0f;
             matrix.m10 = 0.0f;
-            matrix.m11 = scales.y;
+            matrix.m11 = scales.Y;
             matrix.m12 = 0.0f;
             matrix.m13 = 0.0f;
             matrix.m20 = 0.0f;
             matrix.m21 = 0.0f;
-            matrix.m22 = scales.z;
+            matrix.m22 = scales.Z;
             matrix.m23 = 0.0f;
             matrix.m30 = 0.0f;
             matrix.m31 = 0.0f;
@@ -368,17 +368,17 @@ namespace UnityEngine
             Vector3 vector3_2 = Vector3.Normalize(Vector3.Cross(cameraUpVector, vector3_1));
             Vector3 vector1 = Vector3.Cross(vector3_1, vector3_2);
             Matrix4x4 matrix44;
-            matrix44.m00 = vector3_2.x;
-            matrix44.m10 = vector1.x;
-            matrix44.m20 = vector3_1.x;
+            matrix44.m00 = vector3_2.X;
+            matrix44.m10 = vector1.X;
+            matrix44.m20 = vector3_1.X;
             matrix44.m30 = 0.0f;
-            matrix44.m01 = vector3_2.y;
-            matrix44.m11 = vector1.y;
-            matrix44.m21 = vector3_1.y;
+            matrix44.m01 = vector3_2.Y;
+            matrix44.m11 = vector1.Y;
+            matrix44.m21 = vector3_1.Y;
             matrix44.m31 = 0.0f;
-            matrix44.m02 = vector3_2.z;
-            matrix44.m12 = vector1.z;
-            matrix44.m22 = vector3_1.z;
+            matrix44.m02 = vector3_2.Z;
+            matrix44.m12 = vector1.Z;
+            matrix44.m22 = vector3_1.Z;
             matrix44.m32 = 0.0f;
             matrix44.m03 = -Vector3.Dot(vector3_2, cameraPosition);
             matrix44.m13 = -Vector3.Dot(vector1, cameraPosition);
@@ -392,17 +392,17 @@ namespace UnityEngine
             Vector3 vector3_1 = Vector3.Normalize(cameraPosition - cameraTarget);
             Vector3 vector3_2 = Vector3.Normalize(Vector3.Cross(cameraUpVector, vector3_1));
             Vector3 vector1 = Vector3.Cross(vector3_1, vector3_2);
-            matrix.m00 = vector3_2.x;
-            matrix.m10 = vector1.x;
-            matrix.m20 = vector3_1.x;
+            matrix.m00 = vector3_2.X;
+            matrix.m10 = vector1.X;
+            matrix.m20 = vector3_1.X;
             matrix.m30 = 0.0f;
-            matrix.m01 = vector3_2.y;
-            matrix.m11 = vector1.y;
-            matrix.m21 = vector3_1.y;
+            matrix.m01 = vector3_2.Y;
+            matrix.m11 = vector1.Y;
+            matrix.m21 = vector3_1.Y;
             matrix.m31 = 0.0f;
-            matrix.m02 = vector3_2.z;
-            matrix.m12 = vector1.z;
-            matrix.m22 = vector3_1.z;
+            matrix.m02 = vector3_2.Z;
+            matrix.m12 = vector1.Z;
+            matrix.m22 = vector3_1.Z;
             matrix.m32 = 0.0f;
             matrix.m03 = -Vector3.Dot(vector3_2, cameraPosition);
             matrix.m13 = -Vector3.Dot(vector1, cameraPosition);
@@ -624,9 +624,9 @@ namespace UnityEngine
 
         public static Matrix4x4 CreateFromAxisAngle(Vector3 axis, float angle)
         {
-            float x = axis.x;
-            float y = axis.y;
-            float z = axis.z;
+            float x = axis.X;
+            float y = axis.Y;
+            float z = axis.Z;
             float num1 = (float) Math.Sin((double) angle);
             float num2 = (float) Math.Cos((double) angle);
             float num3 = x * x;
@@ -657,9 +657,9 @@ namespace UnityEngine
 
         public static void CreateFromAxisAngle(ref Vector3 axis, float angle, out Matrix4x4 result)
         {
-            float x = axis.x;
-            float y = axis.y;
-            float z = axis.z;
+            float x = axis.X;
+            float y = axis.Y;
+            float z = axis.Z;
             float num1 = (float) Math.Sin((double) angle);
             float num2 = (float) Math.Cos((double) angle);
             float num3 = x * x;
@@ -1213,30 +1213,30 @@ namespace UnityEngine
 
         public static Vector3 TransformPosition(Matrix4x4 matrix, Vector3 position)
         {
-            float num1 = (float) ((double) position.x * (double) matrix.m00 + (double) position.y * (double) matrix.m01 +
-                (double) position.z * (double) matrix.m02) + matrix.m03;
-            float num2 = (float) ((double) position.x * (double) matrix.m10 + (double) position.y * (double) matrix.m11 +
-                (double) position.z * (double) matrix.m12) + matrix.m13;
-            float num3 = (float) ((double) position.x * (double) matrix.m20 + (double) position.y * (double) matrix.m21 +
-                (double) position.z * (double) matrix.m22) + matrix.m23;
+            float num1 = (float) ((double) position.X * (double) matrix.m00 + (double) position.Y * (double) matrix.m01 +
+                (double) position.Z * (double) matrix.m02) + matrix.m03;
+            float num2 = (float) ((double) position.X * (double) matrix.m10 + (double) position.Y * (double) matrix.m11 +
+                (double) position.Z * (double) matrix.m12) + matrix.m13;
+            float num3 = (float) ((double) position.X * (double) matrix.m20 + (double) position.Y * (double) matrix.m21 +
+                (double) position.Z * (double) matrix.m22) + matrix.m23;
             Vector3 vector3;
-            vector3.x = num1;
-            vector3.y = num2;
-            vector3.z = num3;
+            vector3.X = num1;
+            vector3.Y = num2;
+            vector3.Z = num3;
             return vector3;
         }
 
         public static void TransformPosition(ref Matrix4x4 matrix, ref Vector3 position, out Vector3 result)
         {
-            float num1 = (float) ((double) position.x * (double) matrix.m00 + (double) position.y * (double) matrix.m01 +
-                (double) position.z * (double) matrix.m02) + matrix.m03;
-            float num2 = (float) ((double) position.x * (double) matrix.m10 + (double) position.y * (double) matrix.m11 +
-                (double) position.z * (double) matrix.m12) + matrix.m13;
-            float num3 = (float) ((double) position.x * (double) matrix.m20 + (double) position.y * (double) matrix.m21 +
-                (double) position.z * (double) matrix.m22) + matrix.m23;
-            result.x = num1;
-            result.y = num2;
-            result.z = num3;
+            float num1 = (float) ((double) position.X * (double) matrix.m00 + (double) position.Y * (double) matrix.m01 +
+                (double) position.Z * (double) matrix.m02) + matrix.m03;
+            float num2 = (float) ((double) position.X * (double) matrix.m10 + (double) position.Y * (double) matrix.m11 +
+                (double) position.Z * (double) matrix.m12) + matrix.m13;
+            float num3 = (float) ((double) position.X * (double) matrix.m20 + (double) position.Y * (double) matrix.m21 +
+                (double) position.Z * (double) matrix.m22) + matrix.m23;
+            result.X = num1;
+            result.Y = num2;
+            result.Z = num3;
         }
         
         public Vector3 MultiplyPoint3x4(Vector3 point)
@@ -1251,30 +1251,30 @@ namespace UnityEngine
 
         public static Vector3 TransformDirection(Matrix4x4 matrix, Vector3 direction)
         {
-            float num1 = (float) ((double) direction.x * (double) matrix.m00 + (double) direction.y * (double) matrix.m01 +
-                (double) direction.z * (double) matrix.m02);
-            float num2 = (float) ((double) direction.x * (double) matrix.m10 + (double) direction.y * (double) matrix.m11 +
-                (double) direction.z * (double) matrix.m12);
-            float num3 = (float) ((double) direction.x * (double) matrix.m20 + (double) direction.y * (double) matrix.m21 +
-                (double) direction.z * (double) matrix.m22);
+            float num1 = (float) ((double) direction.X * (double) matrix.m00 + (double) direction.Y * (double) matrix.m01 +
+                (double) direction.Z * (double) matrix.m02);
+            float num2 = (float) ((double) direction.X * (double) matrix.m10 + (double) direction.Y * (double) matrix.m11 +
+                (double) direction.Z * (double) matrix.m12);
+            float num3 = (float) ((double) direction.X * (double) matrix.m20 + (double) direction.Y * (double) matrix.m21 +
+                (double) direction.Z * (double) matrix.m22);
             Vector3 vector3;
-            vector3.x = num1;
-            vector3.y = num2;
-            vector3.z = num3;
+            vector3.X = num1;
+            vector3.Y = num2;
+            vector3.Z = num3;
             return vector3;
         }
 
         public static void TransformDirection(ref Matrix4x4 matrix, ref Vector3 direction, out Vector3 result)
         {
-            float num1 = (float) ((double) direction.x * (double) matrix.m00 + (double) direction.y * (double) matrix.m01 +
-                (double) direction.z * (double) matrix.m02);
-            float num2 = (float) ((double) direction.x * (double) matrix.m10 + (double) direction.y * (double) matrix.m11 +
-                (double) direction.z * (double) matrix.m12);
-            float num3 = (float) ((double) direction.x * (double) matrix.m20 + (double) direction.y * (double) matrix.m21 +
-                (double) direction.z * (double) matrix.m22);
-            result.x = num1;
-            result.y = num2;
-            result.z = num3;
+            float num1 = (float) ((double) direction.X * (double) matrix.m00 + (double) direction.Y * (double) matrix.m01 +
+                (double) direction.Z * (double) matrix.m02);
+            float num2 = (float) ((double) direction.X * (double) matrix.m10 + (double) direction.Y * (double) matrix.m11 +
+                (double) direction.Z * (double) matrix.m12);
+            float num3 = (float) ((double) direction.X * (double) matrix.m20 + (double) direction.Y * (double) matrix.m21 +
+                (double) direction.Z * (double) matrix.m22);
+            result.X = num1;
+            result.Y = num2;
+            result.Z = num3;
         }
 
         public static Matrix4x4 operator -(Matrix4x4 matrix1)

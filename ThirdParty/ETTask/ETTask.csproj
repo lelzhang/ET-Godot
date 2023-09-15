@@ -23,7 +23,7 @@
 
     <ItemGroup>
 
-    <Compile Include="..\..\Unity\Assets\ThirdParty\ETTask\**\*.cs">
+    <Compile Include="..\..\Godot\Client\ThirdParty\ETTask\**\*.cs">
         <Link>%(RecursiveDir)%(FileName)%(Extension)</Link>
     </Compile>
     </ItemGroup>

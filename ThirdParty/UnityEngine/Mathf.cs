@@ -1,6 +1,6 @@
 using System;
 
-namespace UnityEngine
+namespace Godot
 {
     public static class Mathf
     {
@@ -573,16 +573,16 @@ namespace UnityEngine
         public static Vector3 Rad2Deg(Vector3 radians)
         {
             return new Vector3(
-                               (float)(radians.x * 180 / System.Math.PI),
-                               (float)(radians.y * 180 / System.Math.PI),
-                               (float)(radians.z * 180 / System.Math.PI));
+                               (float)(radians.X * 180 / System.Math.PI),
+                               (float)(radians.Y * 180 / System.Math.PI),
+                               (float)(radians.Z * 180 / System.Math.PI));
         }
         public static Vector3 Deg2Rad(Vector3 degrees)
         {
             return new Vector3(
-                               (float)(degrees.x * System.Math.PI / 180),
-                               (float)(degrees.y * System.Math.PI / 180),
-                               (float)(degrees.z * System.Math.PI / 180));
+                               (float)(degrees.X * System.Math.PI / 180),
+                               (float)(degrees.Y * System.Math.PI / 180),
+                               (float)(degrees.Z * System.Math.PI / 180));
         }
         
         public const float CosAngle20 = 0.9396926208f;

@@ -34,27 +34,27 @@
         <Compile Include="..\..\Server\Model\Config\ConfigLoader.cs">
           <Link>Config\ConfigLoader.cs</Link>
         </Compile>
-        <Compile Include="..\..\Unity\Codes\Model\Module\Config\**\*.cs">
+        <Compile Include="..\..\Godot\Client\Codes\Model\Module\Config\**\*.cs">
             <Link>Module\Config\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Codes\Model\Core\**\*.cs">
+        <Compile Include="..\..\Godot\Client\Codes\Model\Core\**\*.cs">
             <Link>Core\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Assets\Mono\Core\**\*.cs"> 
+        <Compile Include="..\..\Godot\Client\Mono\Core\**\*.cs"> 
             <Link>Core\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Codes\Model\Module\AI\**\*.cs">
+        <Compile Include="..\..\Godot\Client\Codes\Model\Module\AI\**\*.cs">
             <Link>Module\AI\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Assets\Mono\Module\Network\**\*.cs">
+        <Compile Include="..\..\Godot\Client\Mono\Module\Network\**\*.cs">
             <Link>Module\Network\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Assets\Mono\Module\NetworkTCP\**\*.cs">
+        <Compile Include="..\..\Godot\Client\Mono\Module\NetworkTCP\**\*.cs">
             <Link>Module\NetworkTCP\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
@@ -66,15 +66,15 @@
             <Link>Module\MessageInner\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Codes\Model\Module\Ping\**\*.cs">
+        <Compile Include="..\..\Godot\Client\Codes\Model\Module\Ping\**\*.cs">
             <Link>Module\Ping\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Codes\Model\Module\Message\**\*.cs">
+        <Compile Include="..\..\Godot\Client\Codes\Model\Module\Message\**\*.cs">
             <Link>Module\Message\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Assets\Mono\Module\Message\**\*.cs">
+        <Compile Include="..\..\Godot\Client\Mono\Module\Message\**\*.cs">
             <Link>Module\Message\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
@@ -82,15 +82,15 @@
             <Link>Module\Message\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Codes\Model\Module\Numeric\**\*.cs">
+        <Compile Include="..\..\Godot\Client\Codes\Model\Module\Numeric\**\*.cs">
             <Link>Module\Numeric\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Codes\Model\Module\Recast\**\*.cs">
+        <Compile Include="..\..\Godot\Client\Codes\Model\Module\Recast\**\*.cs">
             <Link>Module\Recast\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Codes\Model\Demo\**\*.cs">
+        <Compile Include="..\..\Godot\Client\Codes\Model\Demo\**\*.cs">
             <Link>Demo\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
@@ -102,15 +102,15 @@
             <Link>Module\Actor\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Codes\Model\Module\Actor\**\*.cs">
+        <Compile Include="..\..\Godot\Client\Codes\Model\Module\Actor\**\*.cs">
             <Link>Module\Actor\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Codes\Model\Module\ActorLocation\**\*.cs">
+        <Compile Include="..\..\Godot\Client\Codes\Model\Module\ActorLocation\**\*.cs">
             <Link>Module\ActorLocation\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Codes\Model\Module\CoroutineLock\**\*.cs">
+        <Compile Include="..\..\Godot\Client\Codes\Model\Module\CoroutineLock\**\*.cs">
             <Link>Module\CoroutineLock\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 

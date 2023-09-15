@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using UnityEngine;
+using Godot;
 
 namespace ET
 {
@@ -16,13 +16,13 @@ namespace ET
             unitInfo.ConfigId = unit.ConfigId;
             unitInfo.Type = (int)unit.Type;
             Vector3 position = unit.Position;
-            unitInfo.X = position.x;
-            unitInfo.Y = position.y;
-            unitInfo.Z = position.z;
+            unitInfo.X = position.X;
+            unitInfo.Y = position.Y;
+            unitInfo.Z = position.Z;
             Vector3 forward = unit.Forward;
-            unitInfo.ForwardX = forward.x;
-            unitInfo.ForwardY = forward.y;
-            unitInfo.ForwardZ = forward.z;
+            unitInfo.ForwardX = forward.X;
+            unitInfo.ForwardY = forward.Y;
+            unitInfo.ForwardZ = forward.Z;
 
             MoveComponent moveComponent = unit.GetComponent<MoveComponent>();
             if (moveComponent != null)
@@ -33,9 +33,9 @@ namespace ET
                     for (int i = moveComponent.N; i < moveComponent.Targets.Count; ++i)
                     {
                         Vector3 pos = moveComponent.Targets[i];
-                        unitInfo.MoveInfo.X.Add(pos.x);
-                        unitInfo.MoveInfo.Y.Add(pos.y);
-                        unitInfo.MoveInfo.Z.Add(pos.z);
+                        unitInfo.MoveInfo.X.Add(pos.X);
+                        unitInfo.MoveInfo.Y.Add(pos.Y);
+                        unitInfo.MoveInfo.Z.Add(pos.Z);
                     }
                 }
             }

@@ -4,10 +4,9 @@ namespace ET
 {
     public enum UILayer
     {
-        Hidden = 0,
-        Low = 10,
-        Mid = 20,
-        High = 30,
+        Normal = 0,
+        PopUp = 10,
+        Loading = 20,
     }
     
     public class UILayerScript//: MonoBehaviour

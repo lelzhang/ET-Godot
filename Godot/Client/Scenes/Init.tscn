@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbil2wslq1urp"]
+
+[ext_resource type="Script" path="res://Mono/MonoBehaviour/Init.cs" id="1_3544i"]
+
+[node name="Global" type="Node"]
+script = ExtResource("1_3544i")
+
+[node name="UnitRoot" type="Node3D" parent="."]
+
+[node name="UIRoot" type="Node2D" parent="."]
+
+[node name="Normal" type="CanvasLayer" parent="UIRoot"]
+
+[node name="PopUp" type="CanvasLayer" parent="UIRoot"]
+layer = 10
+
+[node name="Loading" type="CanvasLayer" parent="UIRoot"]
+layer = 20

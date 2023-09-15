@@ -19,25 +19,25 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\..\Unity\Codes\Hotfix\Demo\Move\MoveComponentSystem.cs">
+    <Compile Include="..\..\Godot\Client\Codes\Hotfix\Demo\Move\MoveComponentSystem.cs">
       <Link>Demo\Move\MoveComponentSystem.cs</Link>
     </Compile>
-    <Compile Include="..\..\Unity\Codes\Hotfix\Module\Config\ConfigComponentSystem.cs">
+    <Compile Include="..\..\Godot\Client\Codes\Hotfix\Module\Config\ConfigComponentSystem.cs">
       <Link>Module\Config\ConfigComponentSystem.cs</Link>
     </Compile>
-    <Compile Include="..\..\Unity\Codes\Hotfix\Module\Numeric\**\*.cs">
+    <Compile Include="..\..\Godot\Client\Codes\Hotfix\Module\Numeric\**\*.cs">
       <Link>Module\Numeric\%(RecursiveDir)%(FileName)%(Extension)</Link>
     </Compile>
 
-    <Compile Include="..\..\Unity\Codes\Hotfix\Module\AI\**\*.cs">
+    <Compile Include="..\..\Godot\Client\Codes\Hotfix\Module\AI\**\*.cs">
       <Link>Module\AI\%(RecursiveDir)%(FileName)%(Extension)</Link>
     </Compile>
 
-    <Compile Include="..\..\Unity\Codes\Hotfix\Module\Recast\**\*.cs">
+    <Compile Include="..\..\Godot\Client\Codes\Hotfix\Module\Recast\**\*.cs">
       <Link>Module\Recast\%(RecursiveDir)%(FileName)%(Extension)</Link>
     </Compile>
 
-    <Compile Include="..\..\Unity\Codes\Hotfix\Module\Message\**\*.cs">
+    <Compile Include="..\..\Godot\Client\Codes\Hotfix\Module\Message\**\*.cs">
       <Link>Module\Message\%(RecursiveDir)%(FileName)%(Extension)</Link>
     </Compile>
   </ItemGroup>

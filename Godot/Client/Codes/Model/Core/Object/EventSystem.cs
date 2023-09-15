@@ -798,7 +798,7 @@ namespace ET
             List<object> iEvents;
             if (!this.allEvents.TryGetValue(a.GetType(), out iEvents))
             {
-                GD.PushWarning("Event not find");
+                Log.Warning("Event not find");
                 return;
             }
 
@@ -807,7 +807,7 @@ namespace ET
                 object obj = iEvents[i];
                 if (!(obj is AEvent<T> aEvent))
                 {
-                    GD.PrintErr($"event error: {obj.GetType().Name}");
+                    Log.Error($"event error: {obj.GetType().Name}");
                     continue;
                 }
 
