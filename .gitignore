@@ -63,3 +63,10 @@ Unity/Unity.Hotfix.csproj
 Unity/Unity.HotfixView.csproj
 Unity/Unity.Model.csproj
 Unity/Unity.ModelView.csproj
+
+Godot/Client/.godot
+Godot/Client/.vs
+Godot/Client/.godot
+
+Godot/Client/ET6_Godot.csproj
+Godot/Client/ET6_Godot.sln
