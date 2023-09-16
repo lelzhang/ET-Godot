@@ -11,7 +11,7 @@ namespace ET
 		Reload = 3,
 	}
 
-	public partial class Init: Node
+	public partial class Init : Node
 	{
 		public Node Node { get; set; }
 
@@ -19,7 +19,9 @@ namespace ET
 
 		public CodeMode CodeMode = CodeMode.Mono;
 
-		public override void _Ready()
+		public InputEvent InputEvent;
+
+        public override void _Ready()
 		{
 			this.Node = this;
 
@@ -32,9 +34,9 @@ namespace ET
 			{
 				Log.Error(e.ExceptionObject.ToString());
 			};
-			
+
 			SynchronizationContext.SetSynchronizationContext(ThreadSynchronizationContext.Instance);
-			
+
 
 			ETTask.ExceptionHandler += Log.Error;
 
@@ -57,5 +59,10 @@ namespace ET
 		{
 			Game.Close();
 		}
+
+		public override void _Input(InputEvent inputEvent)
+		{
+            InputEvent = inputEvent;
+        }
 	}
 }

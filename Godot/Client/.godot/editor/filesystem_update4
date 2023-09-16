@@ -1,3 +1,5 @@
+res://Scenes/Init.tscn
+res://Scenes/Map1.tscn
 res://Mono/GodotUtils/Autoload/SceneManager.cs
 res://Mono/GodotUtils/Deprecated/UICheckbox.cs
 res://Mono/GodotUtils/Deprecated/UIColorPickerBtn.cs
@@ -15,9 +17,5 @@ res://Mono/GodotUtils/Godot Helpers/GPath.cs
 res://Mono/GodotUtils/World2D/Platformer/CameraController.cs
 res://Mono/GodotUtils/World2D/TopDown/CameraController.cs
 res://Mono/MonoBehaviour/Init.cs
-res://Scenes/Init.tscn
-res://Scenes/UILogin.tscn
-res://Scenes/UILobby.tscn
-res://Scenes/CameraRoot.tscn
-res://Scenes/GameMap.tscn
-res://Scenes/Map1.tscn
+res://Scenes/skin.tscn
+res://Scenes/Test.tscn

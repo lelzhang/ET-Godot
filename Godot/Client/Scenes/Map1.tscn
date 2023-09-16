@@ -1,9 +1,32 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6ygv6pr1kdak"]
+[gd_scene load_steps=4 format=3 uid="uid://b6ygv6pr1kdak"]
 
-[ext_resource type="PackedScene" uid="uid://baw6bc8uyicnj" path="res://Scenes/CameraRoot.tscn" id="1_3kr2w"]
+[ext_resource type="ArrayMesh" uid="uid://b37ue53ongleq" path="res://Res/Scene/world.obj" id="2_ahcvq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fpdp4"]
+albedo_color = Color(0.8, 0.8, 0.8, 1)
+metallic_specular = 0.0
+roughness = 0.0
+ao_enabled = true
+
+[sub_resource type="Environment" id="Environment_3pvb7"]
+background_mode = 1
+background_energy_multiplier = 0.93
+ambient_light_color = Color(0.239216, 0.211765, 0.211765, 1)
+ambient_light_energy = 0.5
 
 [node name="Map1" type="Node3D"]
 
-[node name="CameraRoot" parent="." instance=ExtResource("1_3kr2w")]
+[node name="World" type="MeshInstance3D" parent="."]
+material_overlay = SubResource("StandardMaterial3D_fpdp4")
+mesh = ExtResource("2_ahcvq")
 
-[editable path="CameraRoot"]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.9982, -0.053943, -0.0262294, -0.0559864, -0.680976, -0.730162, 0.0215256, 0.730316, -0.68277, 0, 0, 0)
+light_energy = 0.789
+shadow_enabled = true
+shadow_reverse_cull_face = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.275637, 0.961262, 0, -0.961262, 0.275637, 0, 62.923, 6.363)
+environment = SubResource("Environment_3pvb7")
+fov = 45.0
