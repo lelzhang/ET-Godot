@@ -1,5 +1,6 @@
 using System;
 using Godot;
+using GodotUtils;
 
 namespace ET
 {
@@ -57,12 +58,23 @@ namespace ET
             //        C2M_TransferMap c2MTransferMap = new C2M_TransferMap();
             //        self.ZoneScene().GetComponent<SessionComponent>().Session.Call(c2MTransferMap).Coroutine();
             //    }
-
-            if (Init.Instance.InputEvent is InputEventMouseButton mouseEvent && (MouseButton)mouseEvent.ButtonIndex == MouseButton.Left)
+            //if (Init.Instance.InputEvent is InputEventMouse mouseEvent && Input.IsMouseButtonPressed(MouseButton.Left))
+            if (Init.Instance.InputEvent is InputEventMouseButton mouseEvent && (MouseButton) mouseEvent.ButtonIndex == MouseButton.Left)
+            //if (Init.Instance.InputEvent is InputEventMouseMotion mouseEvent)// && (MouseButton)mouseEvent.ButtonIndex == MouseButton.Left)
             {
-                if (mouseEvent.Pressed)
+                if (mouseEvent.IsReleased())
                 {
                     //mouseEvent.Position;
+                    Camera3D camera3D = GlobalComponent.Instance.Unit.GetNode<Camera3D>("Map1/Camera3D");
+                    Unit unit = self.Parent.GetComponent<UnitComponent>().MyUnit;
+                    Vector3 vector3 = camera3D.ProjectPosition(mouseEvent.Position, camera3D.Position.DistanceTo(unit.Position));
+                    Log.Debug($"click pos 2d:{mouseEvent.Position} 3d:{vector3}");
+                    self.ClickPoint = vector3;
+                    self.frameClickMap.X = self.ClickPoint.X;
+                    self.frameClickMap.Y = self.ClickPoint.Y;
+                    self.frameClickMap.Z = self.ClickPoint.Z;
+                    self.ZoneScene().GetComponent<SessionComponent>().Session.Send(self.frameClickMap);
+
                 }
             }
          

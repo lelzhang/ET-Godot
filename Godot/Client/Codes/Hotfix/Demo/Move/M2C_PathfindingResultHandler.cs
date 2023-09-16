@@ -16,6 +16,7 @@ namespace ET
 			{
 				for (int i = 0; i < message.Xs.Count; ++i)
 				{
+					Log.Debug($"Move pos:{message.Xs[i]}");
 					list.Add(new Vector3(message.Xs[i], message.Ys[i], message.Zs[i]));
 				}
 

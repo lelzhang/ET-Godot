@@ -17,6 +17,7 @@ namespace ET
 
         public override async ETTask Execute(AIComponent aiComponent, AIConfig aiConfig, ETCancellationToken cancellationToken)
         {
+            await ETTask.CompletedTask;
             Scene zoneScene = aiComponent.DomainScene();
 
             Unit myUnit = UnitHelper.GetMyUnitFromZoneScene(zoneScene);
@@ -37,7 +38,7 @@ namespace ET
                 //    return;
                 //}
                 xunLuoPathComponent.MoveNext();
-            }
+            }        
         }
     }
 }

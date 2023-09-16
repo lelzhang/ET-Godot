@@ -1,7 +1,7 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 16.09.2023 11:27:27
+# File Created: 16.09.2023 16:54:54
 
-mtllib world.mtl
+mtllib Map1.mtl
 
 #
 # object Ground

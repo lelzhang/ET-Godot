@@ -9,9 +9,10 @@ namespace ET
             // Unit View层
             // 这里可以改成异步加载，demo就不搞了
             //PackedScene res = GD.Load<PackedScene>("res://Res/Unit/Skeleton/Skin.gltf");
-            PackedScene res = GD.Load<PackedScene>("res://Scenes/skin.tscn");
+            PackedScene res = GD.Load<PackedScene>("res://Scenes/Idle.tscn");
             Node3D skin = res.Instantiate() as Node3D;
             GlobalComponent.Instance.Unit.AddChild(skin);
+            args.Unit.AddComponent<GameObjectComponent>().GameObject = skin;
             skin.Position = args.Unit.Position;
 
             //Camera3D camera3D = GlobalComponent.Instance.Unit.GetNode<Camera3D>("Map1/CameraRoot/Camera3D");

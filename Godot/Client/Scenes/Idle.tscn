@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqr60bkn35xls"]
+
+[ext_resource type="PackedScene" uid="uid://c8w0bfil4a7xx" path="res://Res/Unit/Skeleton/Idle.gltf" id="1_ldn5f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o6f8q"]
+albedo_color = Color(1, 0.815686, 0, 1)
+
+[node name="Idle" instance=ExtResource("1_ldn5f")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+
+[node name="Skeleton3D" parent="." index="0"]
+bones/1/scale = Vector3(1, 1, 1)
+bones/2/scale = Vector3(1, 1, 1)
+bones/3/rotation = Quaternion(-2.10572e-06, 0.000398137, 6.83591e-07, 1)
+bones/3/scale = Vector3(1, 1, 1)
+bones/4/scale = Vector3(1, 1, 1)
+bones/6/rotation = Quaternion(0.314116, 0.936518, 0.103876, 0.116079)
+bones/6/scale = Vector3(1, 1, 1)
+bones/7/scale = Vector3(1, 1, 1)
+bones/8/rotation = Quaternion(0, -0.327701, 0, 0.944781)
+bones/10/scale = Vector3(1, 1, 1)
+bones/11/rotation = Quaternion(0, 0.0783931, 0, 0.996923)
+bones/12/rotation = Quaternion(0, 0.172682, 0, 0.984978)
+bones/13/scale = Vector3(1, 1, 1)
+bones/14/scale = Vector3(1, 1, 1)
+bones/16/rotation = Quaternion(-0.639018, 0.745032, 0.0646299, 0.180019)
+bones/16/scale = Vector3(1, 1, 1)
+bones/17/rotation = Quaternion(0.471325, -0.10737, 0.337544, 0.807706)
+bones/17/scale = Vector3(1, 1, 1)
+bones/18/rotation = Quaternion(0, -0.272294, 0, 0.962214)
+bones/18/scale = Vector3(1, 1, 1)
+bones/20/scale = Vector3(1, 1, 1)
+bones/21/rotation = Quaternion(0, 0.233381, 0, 0.972385)
+bones/21/scale = Vector3(1, 1, 1)
+bones/22/rotation = Quaternion(0, 0.172681, 0, 0.984978)
+bones/24/rotation = Quaternion(0, 0.426589, 0, 0.904445)
+bones/24/scale = Vector3(1, 1, 1)
+bones/25/rotation = Quaternion(0, 0.538307, 0, 0.842749)
+bones/26/scale = Vector3(1, 1, 1)
+bones/28/scale = Vector3(1, 1, 1)
+bones/29/rotation = Quaternion(0, -0.329095, 0, 0.944297)
+bones/30/rotation = Quaternion(0.137425, 0.196027, 0.150499, 0.959186)
+bones/30/scale = Vector3(1, 1, 1)
+bones/33/rotation = Quaternion(0, -0.461438, 0, 0.887172)
+bones/34/position = Vector3(3.31642, 0, 0)
+bones/35/rotation = Quaternion(0, 0.707107, -1.46337e-07, 0.707106)
+bones/36/scale = Vector3(1, 1, 1)
+
+[node name="Object02" parent="Skeleton3D" index="0"]
+material_override = SubResource("StandardMaterial3D_o6f8q")
+
+[node name="AnimationPlayer" parent="." index="1"]
+autoplay = "All Animations"

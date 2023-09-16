@@ -1,6 +1,7 @@
+SpotLight3D
+DirectionalLight3D
 AnimationPlayer
 Camera3D
-DirectionalLight3D
 Node3D
 ColorRect
 Button

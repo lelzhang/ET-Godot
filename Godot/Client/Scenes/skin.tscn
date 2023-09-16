@@ -3,10 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://cglrpfb233vyv" path="res://Res/Unit/Skeleton/Skin.gltf" id="1_vh2cq"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0o32p"]
+albedo_color = Color(1, 0.843137, 0.14902, 1)
 metallic_specular = 0.0
 
 [node name="Skin" instance=ExtResource("1_vh2cq")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 
 [node name="Object02" parent="Skeleton3D" index="0"]
 material_overlay = SubResource("StandardMaterial3D_0o32p")

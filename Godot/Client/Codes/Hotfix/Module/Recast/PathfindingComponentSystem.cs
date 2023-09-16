@@ -54,7 +54,7 @@ namespace ET
                 int index = i * 3;
                 result.Add(new Vector3(-self.Result[index], self.Result[index + 1], self.Result[index + 2]));
             }
-            //Log.Debug($"finish find path: {self.GetParent<Unit>().Id} {result.ListToString()}");
+            Log.Debug($"finish find path: {self.GetParent<Unit>().Id} {result.ListToString()}");
         }
 
         public static void FindWithAdjust(this PathfindingComponent self, Vector3 start, Vector3 target, List<Vector3> result,float adjustRaduis)

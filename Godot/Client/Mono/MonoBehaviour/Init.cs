@@ -21,7 +21,7 @@ namespace ET
 
 		public InputEvent InputEvent;
 
-        public override void _Ready()
+		public override void _Ready()
 		{
 			this.Node = this;
 
@@ -62,7 +62,20 @@ namespace ET
 
 		public override void _Input(InputEvent inputEvent)
 		{
-            InputEvent = inputEvent;
-        }
+			InputEvent = inputEvent;
+			//Vector2 pos = GetViewport().GetMousePosition();
+			////GetViewport().GetScreenTransform().
+			//Camera3D camera = GetViewport().GetCamera3D();
+
+			//Vector3 worldPos = camera.ProjectRayOrigin(pos) + camera.ProjectRayNormal(pos) * camera.GetZfar();
+			//Vector3 ray = camera.ProjectRayNormal(pos) * (worldPos - camera.ProjectRayOrigin(pos)).Length();
+			//var intersection = camera.GlobalTransform.IntersectsRay(camera.GlobalPosition, ray);
+
+			//if (intersection != null)
+			//{
+			//	Vector3 intersectionPoint = intersection.Value.Position;
+			//	GD.Print(intersectionPoint);
+			//}
+		}
 	}
 }
