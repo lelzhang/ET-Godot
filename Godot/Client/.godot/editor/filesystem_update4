@@ -1,3 +1,4 @@
+res://Scenes/Init.tscn
 res://Mono/GodotUtils/Autoload/SceneManager.cs
 res://Mono/GodotUtils/Deprecated/UICheckbox.cs
 res://Mono/GodotUtils/Deprecated/UIColorPickerBtn.cs
@@ -15,7 +16,3 @@ res://Mono/GodotUtils/Godot Helpers/GPath.cs
 res://Mono/GodotUtils/World2D/Platformer/CameraController.cs
 res://Mono/GodotUtils/World2D/TopDown/CameraController.cs
 res://Mono/MonoBehaviour/Init.cs
-res://Scenes/Init.tscn
-res://Scenes/Test.tscn
-res://Scenes/Map1.tscn
-res://Codes/HotfixView/Opera/OperaComponentSystem.cs

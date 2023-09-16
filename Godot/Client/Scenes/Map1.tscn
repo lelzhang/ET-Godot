@@ -16,6 +16,7 @@ environment = SubResource("Environment_3pvb7")
 fov = 45.0
 
 [node name="Map1" parent="." instance=ExtResource("1_hk5kv")]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.016639, -0.97364, 0.227486, -0.412694, 0.21392, 0.885394, -0.910717, -0.0791498, -0.405375, 0, 0, 0)

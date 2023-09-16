@@ -798,7 +798,7 @@ namespace ET
             List<object> iEvents;
             if (!this.allEvents.TryGetValue(a.GetType(), out iEvents))
             {
-                Log.Warning("Event not find");
+                Log.Warning($"Event not find: {a.GetType()}");
                 return;
             }
 
