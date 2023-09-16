@@ -25,7 +25,3 @@ window/stretch/mode="viewport"
 [dotnet]
 
 project/assembly_name="ET_Godot"
-
-[rendering]
-
-renderer/rendering_method="gl_compatibility"

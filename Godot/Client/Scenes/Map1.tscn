@@ -19,9 +19,13 @@ fov = 45.0
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.016639, -0.97364, 0.227486, -0.412694, 0.21392, 0.885394, -0.910717, -0.0791498, -0.405375, 0, 0, 0)
+transform = Transform3D(0.374473, -0.670129, 0.640857, -0.62778, 0.325411, 0.707107, -0.682394, -0.66711, -0.298836, 0, 0, 0)
 light_color = Color(0.741176, 0.741176, 0.741176, 1)
 light_indirect_energy = 1.239
 light_bake_mode = 0
 shadow_enabled = true
+shadow_normal_bias = 1.572
+shadow_transmittance_bias = -2.886
+shadow_opacity = 0.78
+shadow_blur = 0.375
 directional_shadow_mode = 0
