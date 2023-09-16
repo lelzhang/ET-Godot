@@ -2,7 +2,8 @@
 ET框架 地址：https://github.com/egametang/ET
 
 
+Godot推荐版本：
+Godot_v4.1.1-stable_mono_win64.exe 及以上版本
+
 QQ群 :  553550318
-
-
 
