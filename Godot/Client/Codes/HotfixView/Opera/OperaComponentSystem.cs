@@ -68,7 +68,7 @@ namespace ET
                     Camera3D camera3D = GlobalComponent.Instance.Unit.GetNode<Camera3D>("Map1/Camera3D");
                     Unit unit = self.Parent.GetComponent<UnitComponent>().MyUnit;
                     Vector3 vector3 = camera3D.ProjectPosition(mouseEvent.Position, camera3D.Position.DistanceTo(unit.Position));
-                    Log.Debug($"click pos 2d:{mouseEvent.Position} 3d:{vector3}");
+                    //Log.Debug($"click pos 2d:{mouseEvent.Position} 3d:{vector3}");
                     self.ClickPoint = vector3;
                     self.frameClickMap.X = self.ClickPoint.X;
                     self.frameClickMap.Y = self.ClickPoint.Y;

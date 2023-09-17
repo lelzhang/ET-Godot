@@ -7,6 +7,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_vertical_guides_ = [639.0]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -17,19 +18,20 @@ color = Color(0.478431, 0.478431, 0.478431, 1)
 [node name="LoginButton" type="Button" parent="."]
 custom_minimum_size = Vector2(100, 30)
 layout_mode = 0
-offset_left = 625.0
+offset_left = 590.0
 offset_top = 400.0
-offset_right = 725.0
+offset_right = 690.0
 offset_bottom = 431.0
+pivot_offset = Vector2(0.5, 0.5)
 action_mode = 0
 text = "Login
 "
 
 [node name="Account" type="TextEdit" parent="."]
 layout_mode = 0
-offset_left = 600.0
+offset_left = 565.0
 offset_top = 300.0
-offset_right = 750.0
+offset_right = 715.0
 offset_bottom = 330.0
 pivot_offset = Vector2(75, 15)
 context_menu_enabled = false
@@ -37,9 +39,9 @@ shortcut_keys_enabled = false
 
 [node name="Password" type="TextEdit" parent="."]
 layout_mode = 0
-offset_left = 600.0
+offset_left = 565.0
 offset_top = 350.0
-offset_right = 750.0
+offset_right = 715.0
 offset_bottom = 380.0
 context_menu_enabled = false
 shortcut_keys_enabled = false

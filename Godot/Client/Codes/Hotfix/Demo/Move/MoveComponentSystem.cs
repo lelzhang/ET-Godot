@@ -168,7 +168,7 @@ namespace ET
 #if NOT_UNITY
                         Quaternion q = Quaternion.Slerp(self.From,self.To, amount);
 #else
-                        Quaternion q = self.From.Slerp(self.To, amount);
+                        Quaternion q = self.From.Normalized().Slerp(self.To.Normalized(), amount);
 #endif
                         unit.Rotation = q;
                     }
@@ -257,7 +257,15 @@ namespace ET
 
                 if (Math.Abs(faceV.X) > 0.01 || Math.Abs(faceV.Z) > 0.01)
                 {
-                    self.To = new Quaternion(faceV, Vector3.Up);
+
+#if !NOT_UNITY
+                    //self.To = Quaternion.FromEuler(self.From * faceV);
+                    //self.To = Quaternion.FromEuler(new Vector3(faceV.X, 0, faceV.Z));
+                    //self.To = Quaternion.FromEuler( self.From.AngleTo(new Quaternion(faceV, Vector3.Up)));
+                    self.To = QuaternionHelper.LookRotation(faceV, Vector3.Up);
+#else
+                    self.To = Quaternion.LookRotation(faceV, Vector3.Up);
+#endif
                 }
 
                 return;
@@ -273,7 +281,14 @@ namespace ET
 
                 if (Math.Abs(faceV.X) > 0.01 || Math.Abs(faceV.Z) > 0.01)
                 {
-                    self.To = new Quaternion(faceV, Vector3.Up);
+#if !NOT_UNITY
+                    //self.To = Quaternion.FromEuler(self.From * faceV);
+                    //self.To = Quaternion.FromEuler(new Vector3(faceV.X,0, faceV.Z));
+                    //self.To = new Quaternion(faceV, Vector3.Up);
+                    self.To = QuaternionHelper.LookRotation(faceV, Vector3.Up);
+#else
+                    self.To = Quaternion.LookRotation(faceV, Vector3.Up);
+#endif
                     unit.Rotation = self.To;
                 }
             }

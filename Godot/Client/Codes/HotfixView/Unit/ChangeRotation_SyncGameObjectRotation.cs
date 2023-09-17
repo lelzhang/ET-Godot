@@ -13,7 +13,8 @@ namespace ET
                 return;
             }
             Node3D transform = gameObjectComponent.GameObject;
-            transform.Rotation = args.Unit.Rotation.GetEuler();
+           
+            //transform.Quaternion = args.Unit.Rotation;
         }
     }
 }

@@ -1,2 +1,21 @@
 res://Scenes/Init.tscn
 res://Scenes/Map1.tscn
+res://Mono/GodotUtils/Autoload/SceneManager.cs
+res://Mono/GodotUtils/Deprecated/UICheckbox.cs
+res://Mono/GodotUtils/Deprecated/UIColorPickerBtn.cs
+res://Mono/GodotUtils/Deprecated/UIElement.cs
+res://Mono/GodotUtils/Deprecated/UILineEdit.cs
+res://Mono/GodotUtils/Deprecated/UIOptionButton.cs
+res://Mono/GodotUtils/Deprecated/UISlider.cs
+res://Mono/GodotUtils/Godot Helpers/GButton.cs
+res://Mono/GodotUtils/Godot Helpers/GCodeHighlighter.cs
+res://Mono/GodotUtils/Godot Helpers/GLabel.cs
+res://Mono/GodotUtils/Godot Helpers/GLinkButton.cs
+res://Mono/GodotUtils/Godot Helpers/GMarginContainer.cs
+res://Mono/GodotUtils/Godot Helpers/GPadding.cs
+res://Mono/GodotUtils/Godot Helpers/GPath.cs
+res://Mono/GodotUtils/World2D/Platformer/CameraController.cs
+res://Mono/GodotUtils/World2D/TopDown/CameraController.cs
+res://Mono/MonoBehaviour/Init.cs
+res://Scenes/UILobby.tscn
+res://Scenes/UILogin.tscn

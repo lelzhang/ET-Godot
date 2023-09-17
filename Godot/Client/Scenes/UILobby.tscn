@@ -7,6 +7,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_horizontal_guides_ = [-122.0]
+metadata/_edit_vertical_guides_ = [639.0]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -16,9 +18,9 @@ color = Color(0, 0.596078, 1, 1)
 
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 580.0
+offset_left = 565.0
 offset_top = 320.0
-offset_right = 730.0
+offset_right = 715.0
 offset_bottom = 370.0
 pivot_offset = Vector2(0.5, 0.5)
 text = "Start Game"
