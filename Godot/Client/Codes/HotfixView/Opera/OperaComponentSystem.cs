@@ -72,6 +72,10 @@ namespace ET
                     //mouseEvent.Position;
                     Camera3D camera3D = GlobalComponent.Instance.Unit.GetNode<Camera3D>("Map1/Camera3D");
 
+                    if(mouseEvent ==null)
+                    {
+                        return;
+                    }
 
                     if (camera3D == null)
                     { 
