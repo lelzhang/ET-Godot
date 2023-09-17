@@ -20,7 +20,7 @@ bones/19/rotation = Quaternion(0.140912, 0.218436, 0.14724, 0.954332)
 bones/23/rotation = Quaternion(-0.0454651, 0.155998, -0.139203, 0.976842)
 
 [node name="Object01" parent="Skeleton3D" index="0"]
-transform = Transform3D(0.141532, -0.0570078, 0.129302, 0.0943682, 0.174345, -0.026427, -0.105183, 0.0797111, 0.150275, -0.26395, 0.758187, 0.710129)
+transform = Transform3D(0.141532, -0.0570078, 0.129302, 0.0943682, 0.174345, -0.0264269, -0.105183, 0.079711, 0.150275, -0.26395, 0.758188, 0.710129)
 bone_idx = 8
 
 [node name="Object02" parent="Skeleton3D" index="1"]
