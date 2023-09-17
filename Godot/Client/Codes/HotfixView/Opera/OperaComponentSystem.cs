@@ -62,10 +62,21 @@ namespace ET
             if (Init.Instance.InputEvent is InputEventMouseButton mouseEvent && (MouseButton) mouseEvent.ButtonIndex == MouseButton.Left)
             //if (Init.Instance.InputEvent is InputEventMouseMotion mouseEvent)// && (MouseButton)mouseEvent.ButtonIndex == MouseButton.Left)
             {
+                if (mouseEvent == null)
+                { 
+                    return;
+                }
+
                 if (mouseEvent.IsReleased())
                 {
                     //mouseEvent.Position;
                     Camera3D camera3D = GlobalComponent.Instance.Unit.GetNode<Camera3D>("Map1/Camera3D");
+
+
+                    if (camera3D == null)
+                    { 
+                        return;
+                    }
                     Unit unit = self.Parent.GetComponent<UnitComponent>().MyUnit;
                     Vector3 vector3 = camera3D.ProjectPosition(mouseEvent.Position, camera3D.Position.DistanceTo(unit.Position));
                     //Log.Debug($"click pos 2d:{mouseEvent.Position} 3d:{vector3}");

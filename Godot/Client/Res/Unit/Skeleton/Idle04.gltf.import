@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://c8w0bfil4a7xx"
-path="res://.godot/imported/Idle.gltf-5c09ea19ed8c2a880bdf9cbfb3aa506f.scn"
+uid="uid://bs2qdumm6mg15"
+path="res://.godot/imported/Idle04.gltf-81ce1007ace325167951aaca86033792.scn"
 
 [deps]
 
-source_file="res://Res/Unit/Skeleton/Idle.gltf"
-dest_files=["res://.godot/imported/Idle.gltf-5c09ea19ed8c2a880bdf9cbfb3aa506f.scn"]
+source_file="res://Res/Unit/Skeleton/Idle04.gltf"
+dest_files=["res://.godot/imported/Idle04.gltf-81ce1007ace325167951aaca86033792.scn"]
 
 [params]
 
@@ -26,7 +26,7 @@ skins/use_named_skins=true
 animation/import=true
 animation/fps=30
 animation/trimming=false
-animation/remove_immutable_tracks=false
+animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "animations": {
@@ -34,7 +34,7 @@ _subresources={
 "save_to_file/enabled": false,
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "",
-"settings/loop_mode": 2,
+"settings/loop_mode": 1,
 "slice_1/end_frame": 0,
 "slice_1/loop_mode": 0,
 "slice_1/name": "",

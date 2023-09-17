@@ -1,13 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3283kbdcginn"]
+[gd_scene load_steps=3 format=3 uid="uid://b3283kbdcginn"]
 
 [ext_resource type="PackedScene" uid="uid://cqr60bkn35xls" path="res://Scenes/Idle.tscn" id="1_fmtbp"]
+[ext_resource type="PackedScene" uid="uid://cdkrmvng1s5ii" path="res://Scenes/Hero.tscn" id="1_h4r2g"]
 
 [node name="Node3D" type="Node3D"]
 
-[node name="Idle" parent="." instance=ExtResource("1_fmtbp")]
-
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0.324097, 0.893763)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.51391, 4.56403)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.834492, -0.310625, 0.455121, 0, 0.825961, 0.563728, -0.55102, -0.470427, 0.689258, 0, 0, 0)
+
+[node name="Barbarian" parent="." instance=ExtResource("1_h4r2g")]
+visible = false
+
+[node name="Idle04" parent="." instance=ExtResource("1_fmtbp")]
