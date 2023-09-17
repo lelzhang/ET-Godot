@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
@@ -79,9 +79,9 @@ namespace ET
 						assembly = Assembly.Load("Codes.dll");
 
 						//assembly = this.GetType().Assembly;
-                        //Node3D node3D = (Node3D) Init.Instance.Owner;
+						//Node3D node3D = (Node3D) Init.Instance.Owner;
 
-                        foreach (Type type in this.assembly.GetTypes())
+						foreach (Type type in this.assembly.GetTypes())
 						{
 							this.monoTypes[type.FullName] = type;
 							this.hotfixTypes[type.FullName] = type;

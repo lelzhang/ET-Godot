@@ -9,6 +9,7 @@ namespace ET
     {
         public override void Awake(OperaComponent self)
         {
+            self.Awake();
         }
     }
 
@@ -24,6 +25,10 @@ namespace ET
     [FriendClass(typeof(OperaComponent))]
     public static class OperaComponentSystem
     {
+        public static void Awake(this OperaComponent self)
+        {
+            
+        }
         public static void Update(this OperaComponent self)
         {
             //    if (Input.IsMouseButtonPressed(MouseButton.Left))
@@ -62,11 +67,6 @@ namespace ET
             if (Init.Instance.InputEvent is InputEventMouseButton mouseEvent && (MouseButton) mouseEvent.ButtonIndex == MouseButton.Left)
             //if (Init.Instance.InputEvent is InputEventMouseMotion mouseEvent)// && (MouseButton)mouseEvent.ButtonIndex == MouseButton.Left)
             {
-                if (mouseEvent == null)
-                { 
-                    return;
-                }
-
                 if (mouseEvent.IsReleased())
                 {
                     //mouseEvent.Position;
@@ -77,8 +77,27 @@ namespace ET
                     { 
                         return;
                     }
+
+                    float RayLength = 1000;
+                    
+                    var from = camera3D.ProjectRayOrigin(mouseEvent.Position);
+                    var to = from + camera3D.ProjectRayNormal(mouseEvent.Position) * RayLength;
+                    
                     Unit unit = self.Parent.GetComponent<UnitComponent>().MyUnit;
-                    Vector3 vector3 = camera3D.ProjectPosition(mouseEvent.Position, camera3D.Position.DistanceTo(unit.Position));
+                    var gameObject = unit.GetComponent<GameObjectComponent>().GameObject;
+
+                    var spaceState = GlobalComponent.Instance.Unit.GetWorld3D().DirectSpaceState;
+                    var query = PhysicsRayQueryParameters3D.Create(from,to);
+                    query.Exclude = new Godot.Collections.Array<Rid> { new Rid(gameObject) };
+                    query.CollideWithAreas = true;
+                    var result = spaceState.IntersectRay(query);
+                    if (!result.TryGetValue("position",out var position))
+                    {
+                        return;
+                    }
+                    Vector3 vector3 = (Vector3)position;
+                   
+                    
                     //Log.Debug($"click pos 2d:{mouseEvent.Position} 3d:{vector3}");
                     self.ClickPoint = vector3;
                     self.frameClickMap.X = self.ClickPoint.X;

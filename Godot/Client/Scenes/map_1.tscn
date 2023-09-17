@@ -1,0 +1,489 @@
+[gd_scene load_steps=5 format=3 uid="uid://36v8wn171eeq"]
+
+[ext_resource type="PackedScene" uid="uid://b1hpnvhsv7dq2" path="res://Res/Scene/Map1.gltf" id="1_uub1g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4s4dj"]
+albedo_color = Color(0.572549, 0.611765, 0.603922, 1)
+metallic_specular = 0.15
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4g04f"]
+size = Vector3(1007.33, 1008.79, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jd3x7"]
+
+[node name="Map1" instance=ExtResource("1_uub1g")]
+
+[node name="Ground" parent="World" index="0"]
+transform = Transform3D(10, 0, 0, 0, 10, 1.13687e-13, 0, -1.13687e-13, 10, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_4s4dj")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Ground" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Ground/StaticBody3D" index="0"]
+shape = SubResource("BoxShape3D_4g04f")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="Cube_1" parent="World/Obstacles/Some_Cubes" index="1"]
+transform = Transform3D(3, 0, 0, 0, 3, 2.84217e-14, 0, -2.84217e-14, 2, -1179.2, -4193.61, -3010.15)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_1" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_1/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_2" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_2/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_3" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_3/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_4" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_4/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_5" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_5/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_6" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_6/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_7" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_7/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_8" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_8/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_9" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_9/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_10" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_10/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_11" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_11/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_12" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_12/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_13" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_13/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_14" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_14/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_15" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_15/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_16" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_16/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_17" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_17/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_18" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_18/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_19" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_19/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_20" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_20/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_21" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_21/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_22" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_22/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_23" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_23/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_24" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_24/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_25" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_25/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_26" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_26/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_27" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_27/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_28" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_28/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_29" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_29/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_30" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_30/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_31" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_31/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_32" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_32/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_33" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_33/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_34" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_34/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_35" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_35/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_36" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_36/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_37" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_37/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_38" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_38/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_39" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_39/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_40" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_40/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_41" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_41/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_42" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_42/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_43" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_43/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_44" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_44/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_45" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_45/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_46" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_46/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_47" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_47/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_48" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_48/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_49" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_49/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_50" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_50/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_51" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_51/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_52" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_52/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_53" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_53/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_54" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_54/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_55" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_55/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_56" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_56/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_57" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_57/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_58" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_58/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_59" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_59/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_60" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_60/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_61" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_61/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_62" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_62/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_63" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_63/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_64" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_64/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_65" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_65/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_66" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_66/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_67" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_67/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_68" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_68/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_69" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_69/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_70" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_70/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_71" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_71/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_72" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_72/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_73" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_73/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_74" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_74/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_75" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_75/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="World/Obstacles/Some_Cubes/Cube_76" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Obstacles/Some_Cubes/Cube_76/StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+shape = SubResource("BoxShape3D_jd3x7")
