@@ -44,5 +44,16 @@ namespace ET
                 Game.EventSystem.PublishClass(EventType.ChangeRotation.Instance);
             }
         }
+
+        public Vector3 Euler
+        {
+            get
+            {
+                if (this.rotation == default)
+                    return default;
+                var (x, y, z) = this.rotation.GetEuler();
+                return new Vector3(Mathf.RadToDeg(x), Mathf.RadToDeg(y), Mathf.RadToDeg(z));
+            }
+        }
     }
 }

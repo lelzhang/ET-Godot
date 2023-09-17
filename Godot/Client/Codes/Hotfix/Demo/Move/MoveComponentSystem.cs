@@ -82,7 +82,7 @@ namespace ET
             return true;
         }
 
-        public static async ETTask<bool> MoveToAsync(this MoveComponent self, List<Vector3> target, float speed, int turnTime = 100, ETCancellationToken cancellationToken = null)
+        public static async ETTask<bool> MoveToAsync(this MoveComponent self, List<Vector3> target, float speed, int turnTime = 150, ETCancellationToken cancellationToken = null)
         {
             self.Stop();
 
@@ -165,6 +165,7 @@ namespace ET
                     if (self.TurnTime > 0)
                     {
                         amount = moveTime * 1f / self.TurnTime;
+                        amount = Mathf.Clamp(amount, 0, 1);
 #if NOT_UNITY
                         Quaternion q = Quaternion.Slerp(self.From,self.To, amount);
 #else

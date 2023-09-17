@@ -8,7 +8,7 @@ namespace ET
         {
             // Unit View层
             // 这里可以改成异步加载，demo就不搞了
-            PackedScene res = GD.Load<PackedScene>("res://Scenes/Idle.tscn");
+            PackedScene res = GD.Load<PackedScene>("res://Prefabs/unit.tscn");
             Node3D skin = res.Instantiate() as Node3D;
             GlobalComponent.Instance.Unit.AddChild(skin);
             args.Unit.AddComponent<GameObjectComponent>().GameObject = skin;
