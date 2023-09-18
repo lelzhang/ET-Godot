@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bbil2wslq1urp"]
+[gd_scene load_steps=3 format=3 uid="uid://bbil2wslq1urp"]
 
 [ext_resource type="Script" path="res://Mono/MonoBehaviour/Init.cs" id="1_3544i"]
+[ext_resource type="Script" path="res://Scenes/Test.cs" id="2_0c4h1"]
 
 [node name="Global" type="Node"]
 script = ExtResource("1_3544i")
@@ -16,3 +17,9 @@ layer = 10
 
 [node name="Loading" type="CanvasLayer" parent="UIRoot"]
 layer = 20
+
+[node name="Node3D" type="Node3D" parent="."]
+script = ExtResource("2_0c4h1")
+forward = Vector3(1, 0, 1)
+up = Vector3(0, 1, 0)
+order = 2

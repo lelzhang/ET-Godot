@@ -7,14 +7,8 @@ namespace Godot
     {
         public static Quaternion LookRotation(Vector3 viewVec, Vector3 upVec)
         {
-            Quaternion q;
-            bool ret = LookRotationToQuaternion(viewVec, upVec, out q);
-            if (!ret)
-            {
-                throw new Exception("Look fail!");
-            }
-
-            return q;
+            var lookingAt = Basis.LookingAt(viewVec, upVec);
+            return lookingAt.GetRotationQuaternion();
         }
 
         public static bool LookRotationToQuaternion(Vector3 viewVec, Vector3 upVec, out Quaternion quat)
@@ -42,9 +36,9 @@ namespace Godot
             if (fTrace > 0.0f)
             {
                 // |w| > 1/2, mafy as well choose w > 1/2
-                fRoot = Mathf.Sqrt(fTrace + 1.0f);  // 2w
+                fRoot = Mathf.Sqrt(fTrace + 1.0f); // 2w
                 q.W = 0.5f * fRoot;
-                fRoot = 0.5f / fRoot;  // 1/(4w)
+                fRoot = 0.5f / fRoot; // 1/(4w)
                 q.X = (kRot.Get(2, 1) - kRot.Get(1, 2)) * fRoot;
                 q.Y = (kRot.Get(0, 2) - kRot.Get(2, 0)) * fRoot;
                 q.Z = (kRot.Get(1, 0) - kRot.Get(0, 1)) * fRoot;
@@ -74,6 +68,7 @@ namespace Godot
                 q.Y = apkQuat[1];
                 q.Z = apkQuat[2];
             }
+
             q = Normalize(q);
 
             return q;
@@ -82,7 +77,7 @@ namespace Godot
         public static Quaternion Normalize(Quaternion quaternion)
         {
             float num = 1f / (float)Math.Sqrt((double)quaternion.X * (double)quaternion.X + (double)quaternion.Y * (double)quaternion.Y +
-                                               (double)quaternion.Z * (double)quaternion.Z + (double)quaternion.W * (double)quaternion.W);
+                                              (double)quaternion.Z * (double)quaternion.Z + (double)quaternion.W * (double)quaternion.W);
             Quaternion quaternion1;
             quaternion1.X = quaternion.X * num;
             quaternion1.Y = quaternion.Y * num;
