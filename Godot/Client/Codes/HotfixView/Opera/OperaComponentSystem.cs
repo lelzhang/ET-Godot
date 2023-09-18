@@ -67,15 +67,17 @@ namespace ET
             if (Init.Instance.InputEvent is InputEventMouseButton mouseEvent && (MouseButton) mouseEvent.ButtonIndex == MouseButton.Left)
             //if (Init.Instance.InputEvent is InputEventMouseMotion mouseEvent)// && (MouseButton)mouseEvent.ButtonIndex == MouseButton.Left)
             {
+                if (mouseEvent == null)
+                {
+                    return;
+                }
+
                 if (mouseEvent.IsReleased())
                 {
                     //mouseEvent.Position;
                     Camera3D camera3D = GlobalComponent.Instance.Unit.GetNode<Camera3D>("Map1/Camera3D");
 
-                    if(mouseEvent ==null)
-                    {
-                        return;
-                    }
+                   
 
                     if (camera3D == null)
                     { 
@@ -88,6 +90,11 @@ namespace ET
                     var to = from + camera3D.ProjectRayNormal(mouseEvent.Position) * RayLength;
                     
                     Unit unit = self.Parent.GetComponent<UnitComponent>().MyUnit;
+                    if (unit == null)
+                    {
+                        return;
+                    }
+
                     var gameObject = unit.GetComponent<GameObjectComponent>().GameObject;
 
                     var spaceState = GlobalComponent.Instance.Unit.GetWorld3D().DirectSpaceState;

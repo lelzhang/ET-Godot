@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://nryqucv8fxfx"]
 
-[ext_resource type="PackedScene" uid="uid://bs2qdumm6mg15" path="res://Res/Unit/Skeleton/Idle04.gltf" id="1_ybimf"]
+[ext_resource type="PackedScene" uid="uid://h7vd828nt02q" path="res://Scenes/skin.tscn" id="1_inmua"]
 
 [node name="Unit" type="Node3D"]
 
-[node name="Idle04" parent="." instance=ExtResource("1_ybimf")]
+[node name="skin" parent="." instance=ExtResource("1_inmua")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
